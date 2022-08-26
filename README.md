@@ -19,6 +19,12 @@ Now you can be able to access the container through the following command
 make de
 ~~~
 
+run command:
+
+```
+php yii gen/tree [input file path] [output file path]
+```
+
 
 # Put input.csv to ```files``` directory, so you can skip directory names
 
