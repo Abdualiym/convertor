@@ -23,7 +23,7 @@ class CSVParser
         $this->csv->delimiter = ";";
     }
 
-    public function validateRowCount(int $rowLimit = 20000, bool $throwWhenExceed = true): bool
+    public function validateRowCount(int $rowLimit = 20000, bool $throwWhenExceed = true): void
     {
         if ($throwWhenExceed) {
             $this->csv->loadFile($this->inputFile);
@@ -33,7 +33,6 @@ class CSVParser
         } else {
             $this->csv->limit = $rowLimit;
         }
-        return true;
     }
 
     public function getParsedArray(): array
