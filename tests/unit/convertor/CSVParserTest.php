@@ -2,7 +2,7 @@
 
 namespace unit\convertor;
 
-use app\converter\CSVParser;
+use app\convertor\CSVParser;
 use Codeception\Test\Unit;
 use UnitTester;
 use yii\helpers\VarDumper;

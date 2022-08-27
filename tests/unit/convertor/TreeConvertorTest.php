@@ -2,8 +2,8 @@
 
 namespace unit\convertor;
 
-use app\converter\CSVParser;
-use app\converter\TreeConvertor;
+use app\convertor\CSVParser;
+use app\convertor\TreeConvertor;
 use Codeception\Test\Unit;
 use UnitTester;
 use yii\helpers\VarDumper;

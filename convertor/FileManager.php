@@ -1,6 +1,6 @@
 <?php
 
-namespace app\converter;
+namespace app\convertor;
 
 use RuntimeException;
 

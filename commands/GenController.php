@@ -2,9 +2,9 @@
 
 namespace app\commands;
 
-use app\converter\CSVParser;
-use app\converter\FileManager;
-use app\converter\TreeConvertor;
+use app\convertor\CSVParser;
+use app\convertor\FileManager;
+use app\convertor\TreeConvertor;
 use RuntimeException;
 use yii\console\Controller;
 use yii\console\ExitCode;

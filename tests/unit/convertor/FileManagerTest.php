@@ -2,7 +2,7 @@
 
 namespace unit\convertor;
 
-use app\converter\FileManager;
+use app\convertor\FileManager;
 use Codeception\Test\Unit;
 use UnitTester;
 
