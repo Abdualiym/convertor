@@ -2,11 +2,9 @@
 
 namespace app\convertor;
 
-use yii\helpers\VarDumper;
-
-class TreeConvertor
+class TreeConvertor implements TreeConvertorInterface
 {
-    public const THROUGH_COMP = 'Прямые компоненты';
+    private const THROUGH_COMP = 'Прямые компоненты';
 
     public function convert(array $dataArray): array
     {

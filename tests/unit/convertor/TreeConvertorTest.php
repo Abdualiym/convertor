@@ -2,11 +2,9 @@
 
 namespace unit\convertor;
 
-use app\convertor\CSVParser;
 use app\convertor\TreeConvertor;
 use Codeception\Test\Unit;
 use UnitTester;
-use yii\helpers\VarDumper;
 
 class TreeConvertorTest extends Unit
 {

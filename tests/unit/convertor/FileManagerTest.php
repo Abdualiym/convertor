@@ -12,17 +12,22 @@ class FileManagerTest extends Unit
      * @var UnitTester
      */
     public $tester;
+    private $file;
     public const BASE_DIR = 'tests/_data/files';
+
+    protected function _before()
+    {
+        $this->file = new FileManager();
+        $this->file->setup(self::BASE_DIR, self::BASE_DIR);
+    }
 
     public function testInputFileCorrect(): void
     {
-        $file = new FileManager(self::BASE_DIR, self::BASE_DIR);
-        verify($file->getInputFile())->equals(self::BASE_DIR . '/input.csv');
+        verify($this->file->getInputFile())->equals(self::BASE_DIR . '/input.csv');
     }
 
     public function testCorrectSaveToJson(): void
     {
-        $file = new FileManager(self::BASE_DIR, self::BASE_DIR);
         $array = [
             'itemName' => 'Total',
             'parent' => null,
@@ -35,7 +40,7 @@ class FileManagerTest extends Unit
             ]
         ];
 
-        $file->saveAsJson($array);
+        $this->file->saveAsJson($array);
 
         $outputFile = self::BASE_DIR . '/output.json';
         verify($outputFile)->fileExists();
